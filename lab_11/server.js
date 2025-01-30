@@ -6,13 +6,11 @@ app.get('/', function(req, res){
 app.get('/test', function(req, res){
     res.send("this is route 2");
 });
-var http = require('http');
 var knockknock = require('knock-knock-jokes');
+app.get('/joke', function(req, res){
+    res.send("this is route 3");
+   });
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-   var randomJoke = knockknock()
-    res.end(randomJoke);
 
 app.listen(8080); 
 
