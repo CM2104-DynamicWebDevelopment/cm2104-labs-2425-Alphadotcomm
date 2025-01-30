@@ -16,6 +16,11 @@ app.get('/joke', function(req, res){
     var y = req.query.y;
      res.send("X + Y="+(x+y));
     });
+    app.get('/calc', function(req, res){
+        var x = req.query.x;
+        var y = req.query.y;
+         res.send("X + Y="+(x+y));
+        });
 
 app.listen(8080); 
 
