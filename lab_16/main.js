@@ -1,3 +1,4 @@
+var socket = io();
 <html>
  <head>
  <title>Socket.IO chat</title>
